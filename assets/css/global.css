@@ -1,0 +1,28 @@
+:root {
+    --primary-bg-color: #FEF0ED;
+    --border-color: #28292E;
+
+    --title-color: #362623;
+    --text-color: #362623;
+    --fundo-elementos: #FDAFAD;
+    --fundo-rosa-elementos: #F25174;
+    --link-color: #9A9A9C;
+    --icon-color: #C7C8C9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    vertical-align: baseline;
+    list-style: none;
+    text-decoration: none;
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary-bg-color) transparent;
+}
+
+body{
+    background-color: var(--primary-bg-color);
+}
+
