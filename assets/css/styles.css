@@ -59,6 +59,10 @@ nav ul{
     cursor: pointer;
 }
 
+.itens-nav:hover{
+    background-color: var(--fundo-rosa-elementos);
+}
+
 .itens-nav a{
     color: white;
 }
