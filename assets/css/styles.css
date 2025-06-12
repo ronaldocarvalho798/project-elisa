@@ -4,14 +4,6 @@ header{
     animation-delay: 400ms;
 }
 
-
-button:focus,
-a:focus {
-  outline: none;
-}
-
-
-
 .container{
     padding: 0 1rem;
 }
@@ -52,8 +44,8 @@ nav li{
 }
 
 .chibi{
-    animation: fade 0.7s ease-in-out forwards;
-    animation-delay: 100ms;
+    animation: fade 1s ease-in-out forwards;
+    animation-delay: 300ms;
 }
 
 
@@ -65,6 +57,9 @@ nav li{
     font-size: .9rem;
     transition: 0.3s ease-in-out;
     cursor: pointer;
+}
+
+.itens-nav a{
     color: white;
 }
 
