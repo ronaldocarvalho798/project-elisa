@@ -121,7 +121,7 @@ li .bi, li .t{
     transition: 0.5s ease-in-out;
 }
 
-li:hover a,
+li:hover .t,
 li:hover .bi {
     color: var(--fundo-rosa-elementos);
 }
