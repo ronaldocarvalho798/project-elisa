@@ -16,16 +16,16 @@ header{
 }
 
 main{
-    max-width: 390px;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 img{
-    width: 300px;
+    width: 390px;
 }
 
 nav{
@@ -64,3 +64,13 @@ ul i{
     margin-right: 10px;
     font-size: 1.2rem;
 }
+
+.quadro{
+   background: url(/assets/images/quadrocut.png) center / cover no-repeat;
+   height: 230px;
+   padding: 2.5rem 3.3rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
