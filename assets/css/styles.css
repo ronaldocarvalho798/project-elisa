@@ -1,5 +1,7 @@
 header{
     padding: 1rem;
+    animation: fadetopbot 1.4s ease-in-out forwards;
+    animation-delay: 400ms;
 }
 
 .container{
@@ -40,6 +42,11 @@ nav li{
     color: white;    
 }
 
+.chibi{
+    animation: fade 0.7s ease-in-out forwards;
+    animation-delay: 100ms;
+}
+
 
 .itens-nav{
     background-color: var(--fundo-elementos);
@@ -47,6 +54,25 @@ nav li{
     border-radius: 14px;
     font-weight: 600;
     font-size: .9rem;
+}
+
+
+
+.itens-nav:nth-child(1){
+    animation: fade 0.5s ease-in-out forwards;
+    animation-delay: 100ms;
+}
+.itens-nav:nth-child(2){
+    animation: fade 0.5s ease-in-out forwards;
+    animation-delay: 200ms;
+}
+.itens-nav:nth-child(3){
+    animation: fade 0.5s ease-in-out forwards;
+    animation-delay: 400ms;
+}
+.itens-nav:nth-child(4){
+    animation: fade 0.5s ease-in-out forwards;
+    animation-delay: 600ms;
 }
 
 .bg-rosa{
@@ -66,11 +92,39 @@ ul i{
 }
 
 .quadro{
-   background: url(/assets/images/quadrocut.png) center / cover no-repeat;
-   height: 230px;
-   padding: 2.5rem 3.3rem;
+   background: url(/assets/images/quadrocut.png) no-repeat;
+   background-position: center;
+   background-size: cover;
+   width: 90%;
+   margin: auto auto;
+   padding: 2.5rem;
    display: flex;
    flex-direction: column;
    justify-content: center;
 }
 
+.hidden{
+    opacity: 0;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadetopbot {
+    0%{
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
