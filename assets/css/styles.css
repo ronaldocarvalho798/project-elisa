@@ -37,7 +37,7 @@ nav{
     width: 100%;
 }
 
-nav li{
+nav ul{
     display: flex;
     justify-content: space-between;
     color: white;    
@@ -93,9 +93,23 @@ nav li{
     text-align: center;
 }
 
-ul i{
+li{
+    cursor: pointer;
+}
+
+li .bi{
     margin-right: 10px;
+}
+
+li .bi, li .t{
     font-size: 1.2rem;
+    color: var(--fundo-elementos);
+    transition: 0.5s ease-in-out;
+}
+
+li:hover a,
+li:hover .bi {
+    color: var(--fundo-rosa-elementos);
 }
 
 .quadro{
