@@ -11,6 +11,7 @@ header{
 .title-header{
     font-size: 1.6rem;
     font-weight: 500;
+    color: var(--title-color);
 }
 
 .text-light{
@@ -120,8 +121,9 @@ li .bi{
 }
 
 li .bi, li .t{
-    font-size: 1.2rem;
-    color: var(--fundo-elementos);
+    font-size: .9rem;
+    font-weight: 700;
+    color: var(--fundo-rosa-elementos-light);
     transition: 0.5s ease-in-out;
 }
 
@@ -130,16 +132,98 @@ li:hover .bi {
     color: var(--fundo-rosa-elementos);
 }
 
-.quadro{
-   background: url(/assets/images/quadrocut.png) no-repeat;
-   background-position: center;
-   background-size: cover;
-   width: 90%;
-   margin: auto auto;
-   padding: 2.5rem;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
+li .t{
+    color: dodgerblue;
+    text-transform: lowercase;
+}
+
+
+.container-links{
+    position: relative; /* Essencial para posicionar o ::after */
+    margin-bottom: 30px;
+}
+
+.container-links::after{
+    content: ''; /* Essencial para o pseudo-elemento ser renderizado */
+    position: absolute;
+    bottom: 0; /* Posiciona a linha na parte inferior da div */
+    left: 0;
+    width: 100%; /* A linha terá a largura total da div */
+    height: 1px; /* Espessura da linha */
+    background-color: #ffced8; /* Cor da linha (pode ser qualquer cor que combine com seu design) */
+    /* Transform para mover a linha para baixo */
+    transform: translateY(7px); /* Move a linha 20px para baixo */
+}
+
+.links{
+    border: 1px solid var(--fundo-elementos);
+    border-radius: 20px;
+    padding: 0.1rem 0.6rem;
+    background-color: #ffd1e9;
+}
+
+#about{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#about::after{
+    content: ''; /* Essencial para o pseudo-elemento ser renderizado */
+    position: absolute;
+    bottom: 0; /* Posiciona a linha na parte inferior da div */
+    left: 0;
+    width: 100%; /* A linha terá a largura total da div */
+    height: 1px; /* Espessura da linha */
+    background-color: #ffa9ba; /* Cor da linha (pode ser qualquer cor que combine com seu design) */
+    /* Transform para mover a linha para baixo */
+    transform: translateY(0px); /* Move a linha 20px para baixo */
+}
+
+#img-about{
+    width: 170px;
+    border-radius: 30px;
+}
+
+.bot{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#doces{
+    width: 80%;
+}
+
+
+.top{
+    position: relative;
+    padding: 0 10px;
+    margin-bottom: 30px;
+}
+
+.top h2, .top p{
+    color: #DA86AC;
+    font-weight: 700;
+}
+
+.top p{
+    font-size: .875rem;
+    color: #eaaac7;
+}
+
+.top::after{
+     content: ''; /* Essencial para o pseudo-elemento ser renderizado */
+    position: absolute;
+    bottom: 0; /* Posiciona a linha na parte inferior da div */
+    left: 0;
+    width: 95%; /* A linha terá a largura total da div */
+    height: 1px; /* Espessura da linha */
+    background-color: #ffb1c5; /* Cor da linha (pode ser qualquer cor que combine com seu design) */
+    /* Transform para mover a linha para baixo */
+    transform: translateY(15px); /* Move a linha 20px para baixo */
 }
 
 .hidden{
