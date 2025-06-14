@@ -123,7 +123,7 @@ li .bi{
 li .bi, li .t{
     font-size: .9rem;
     font-weight: 700;
-    color: var(--fundo-rosa-elementos-light);
+    color: #f3aaba;
     transition: 0.5s ease-in-out;
 }
 
@@ -133,8 +133,9 @@ li:hover .bi {
 }
 
 li .t{
-    color: rgb(133, 194, 255);
+    color: #a3cbf3;
     text-transform: lowercase;
+    font-weight: 900;
 }
 
 
