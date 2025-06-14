@@ -157,10 +157,10 @@ li .t{
 }
 
 .links{
-    border: 1px solid var(--fundo-elementos);
+    border: 1px solid #ffbbdd;
     border-radius: 20px;
     padding: 0.1rem 0.6rem;
-    background-color: #ffe5f2;
+    background-color: #ffe2f1;
 }
 
 #about{
