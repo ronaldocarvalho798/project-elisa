@@ -133,7 +133,7 @@ li:hover .bi {
 }
 
 li .t{
-    color: #98cbff;
+    color: #98d8ff;
     text-transform: lowercase;
     font-weight: 900;
 }
@@ -157,7 +157,7 @@ li .t{
 }
 
 .links{
-    border: 1px solid #ffc7e3;
+    border: 1px solid #ffd0e7;
     border-radius: 20px;
     padding: 0.1rem 0.6rem;
     background-color: #ffebf5;
