@@ -68,9 +68,8 @@ nav{
 
 
 .itens-nav{
-    background-color: #ff9c9a;
     padding: 2px 10px;
-    border-radius: 7px;
+    border-radius: 20px;
     font-weight: 600;
     font-size: .9rem;
     transition: 0.3s ease-in-out;
@@ -121,10 +120,6 @@ nav{
     animation-delay: 1600ms;
 }
 
-
-.bg-rosa{
-    background-color: var(--fundo-rosa-elementos);
-}
 
 .contact{
     display: flex;
