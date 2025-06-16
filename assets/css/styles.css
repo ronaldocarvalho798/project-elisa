@@ -1,7 +1,7 @@
 header{
     padding: 1rem;
-    animation: fadetopbot 1.4s ease-in-out forwards;
-    animation-delay: 400ms;
+    animation: fadetopbot 1.2s ease-in-out forwards;
+    animation-delay: 200ms;
 }
 
 .container{
@@ -39,8 +39,8 @@ nav{
 }
 
 .chibi{
-    animation: fade 1s ease-in-out forwards;
-    animation-delay: 300ms;
+    animation: fade 1.3s ease-in-out forwards;
+    animation-delay: 700ms;
 }
 
 .nav-container ul{
@@ -51,7 +51,21 @@ nav{
     padding: 5px 0 0 0; 
     background-color: #ffb7c7;
     border-radius: 0 15px 15px 0;
+    animation: slidefade 1.2s ease-out;
+    animation-delay: 200ms;
 }
+
+@keyframes slidefade {
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 
 .itens-nav{
     background-color: #ff9c9a;
@@ -75,32 +89,36 @@ nav{
 
 .itens-nav:nth-child(1){
     animation: fade 0.5s ease-in-out forwards;
-    animation-delay: 100ms;
+    animation-delay: 1300ms;
 }
 .itens-nav:nth-child(2){
     animation: fade 0.5s ease-in-out forwards;
-    animation-delay: 200ms;
+    animation-delay: 1400ms;
 }
 .itens-nav:nth-child(3){
     animation: fade 0.5s ease-in-out forwards;
-    animation-delay: 400ms;
+    animation-delay: 1500ms;
 }
 .itens-nav:nth-child(4){
     animation: fade 0.5s ease-in-out forwards;
-    animation-delay: 600ms;
+    animation-delay: 1600ms;
+}
+
+.links{
+    opacity: 0;
 }
 
 .links:nth-child(1){
     animation: fade 0.5s ease-in-out forwards;
-    animation-delay: 100ms;
+    animation-delay: 1400ms;
 }
 .links:nth-child(2){
     animation: fade 0.5s ease-in-out forwards;
-    animation-delay: 200ms;
+    animation-delay: 1500ms;
 }
 .links:nth-child(3){
     animation: fade 0.5s ease-in-out forwards;
-    animation-delay: 400ms;
+    animation-delay: 1600ms;
 }
 
 
@@ -261,3 +279,5 @@ li .t{
         transform: translateY(0px);
     }
 }
+
+
