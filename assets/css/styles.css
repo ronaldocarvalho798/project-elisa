@@ -45,10 +45,10 @@ nav{
 
 .nav-container ul{
     display: flex;
-    gap: 20px;
-    color: white;    
-    width: 95%;
-    padding: 5px 0 0 0; 
+    gap: 17px;
+    color: white;
+    max-width: 95%;
+    padding: 5px; 
     background-color: #ffb7c7;
     border-radius: 0 15px 15px 0;
     animation: slidefade 1.2s ease-out;
@@ -70,7 +70,7 @@ nav{
 .itens-nav{
     background-color: #ff9c9a;
     padding: 2px 10px;
-    border-radius: 7px 7px 0 0;
+    border-radius: 7px;
     font-weight: 600;
     font-size: .9rem;
     transition: 0.3s ease-in-out;
