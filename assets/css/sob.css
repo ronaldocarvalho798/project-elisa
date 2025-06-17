@@ -1,21 +1,20 @@
 .sob{
     display: flex;
-    align-items: center;
     justify-content: center;
     margin-bottom: 10px;
+    padding: 0 10px;
 }
 
 .card-sob{
     display: flex;
     flex-direction: column;
     text-align: left;
-    width: 345px;
+    width: 99%;
     border-radius: 20px;
     background-color: #d44362cf;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
     padding: 1rem;
     color: white;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.538);
 }
 
 .card-top{
