@@ -11,11 +11,26 @@
     --icon-color: #C7C8C9;
 }
 
+@font-face {
+    font-family: 'bright'; /* Dê um nome único para sua fonte */
+    src: url('/assets/fonts/Bright\ DEMO.otf') format('opentype'); /* Caminho e formato do seu arquivo */
+    font-weight: normal; /* Opcional: se não for um peso específico */
+    font-style: normal;  /* Opcional: se não for um estilo específico */
+}
+
+@font-face {
+    font-family: 'sofia'; /* Dê um nome único para sua fonte */
+    src: url('/assets/fonts/sofia-pro/Sofia\ Pro\ Regular\ Az.otf') format('opentype'); /* Caminho e formato do seu arquivo */
+    font-weight: normal; /* Opcional: se não for um peso específico */
+    font-style: normal;  /* Opcional: se não for um estilo específico */
+}
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Nunito", sans-serif;
+    font-family: "sofia", sans-serif;
     vertical-align: baseline;
     list-style: none;
     text-decoration: none;

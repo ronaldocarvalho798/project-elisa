@@ -10,7 +10,7 @@ header{
 
 .title-header{
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: bold;
     color: var(--title-color);
 }
 
@@ -76,12 +76,13 @@ nav{
     cursor: pointer;
 }
 
-.itens-nav:hover{
-    background-color: var(--fundo-rosa-elementos);
+.itens-nav a:hover{
+    color: var(--fundo-rosa-elementos);
 }
 
 .itens-nav a{
     color: white;
+    transition: 0.3s ease-in-out;
 }
 
 
