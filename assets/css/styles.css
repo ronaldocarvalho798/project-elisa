@@ -212,7 +212,7 @@ li .t{
 }
 
 #doces{
-    width: 80%;
+    max-width: 200px;
 }
 
 
