@@ -11,7 +11,7 @@ header{
 .title-header{
     font-size: 1.6rem;
     font-weight: bold;
-    color: var(--title-color);
+    color: black;
 }
 
 .text-light{
@@ -25,17 +25,15 @@ main{
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    margin-top: 30px;
+    margin: 180px;
 }
 
 img{
-    width: 390px;
+    width: 900px;
 }
 
 nav{
     position: relative;
-    top: -20px;
-    width: 100%;
 }
 
 .chibi{
@@ -45,11 +43,8 @@ nav{
 
 .nav-container ul{
     display: flex;
-    gap: 17px;
-    color: white;
-    max-width: 350px;
+    gap: 100px;
     padding: 5px; 
-    background-color: #ff9fbf;
     border-radius: 0 15px 15px 0;
     animation: slidefade 1.2s ease-out;
     animation-delay: 200ms;
@@ -71,17 +66,18 @@ nav{
     padding: 2px 10px;
     border-radius: 20px;
     font-weight: 600;
-    font-size: .9rem;
+    font-size: 1.6rem;
     transition: 0.3s ease-in-out;
     cursor: pointer;
 }
 
 .itens-nav a:hover{
-    color: var(--fundo-rosa-elementos);
+    color: rgb(143, 75, 231);
 }
 
 .itens-nav a{
-    color: white;
+    color: rgb(201, 159, 255);
+    font-size: 1.125rem;
     transition: 0.3s ease-in-out;
 }
 
@@ -253,6 +249,117 @@ li .t{
     opacity: 0;
 }
 
+
+.container-icons img{
+    width: 80px;
+    filter: sepia(100%) hue-rotate(270deg);
+}
+
+
+
+.container-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.container-bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+
+.wrapper-collum {
+    perspective: 1200px;
+    max-width: 390px; 
+}
+
+.container-collum {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 100%;    
+    height: 100%;
+    border: 1px solid rgb(255, 203, 248);
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    transition: transform 0.5s ease-in-out; /* A transição continua aqui */
+    /* Remova: transform-style: preserve-3d; */ /* Não é mais necessário aqui */
+}
+
+.wrapper-collum:first-child .container-collum {
+    transform: rotateY(0);
+}
+.wrapper-collum:first-child .container-collum:hover {
+    transform: rotateY(25deg) rotateX(5deg);
+}
+.wrapper-collum:nth-child(2) .container-collum {
+    transform: rotateY(0);
+}
+.wrapper-collum:nth-child(2) .container-collum:hover {
+     transform: rotateY(25deg) rotateX(5deg);
+}
+
+.wrapper-collum:nth-child(3) .container-collum {
+    transform: rotateY(0);
+}
+.wrapper-collum:nth-child(3) .container-collum:hover {
+     transform: rotateY(25deg) rotateX(5deg);
+}
+
+/* Outros estilos que você já tinha */
+.container-collum p {
+    text-align: justify;
+}
+
+
+
+.icons-softwares{
+    cursor: pointer;
+    transition: 0.5s ease-in-out;   
+}
+
+.icons-softwares:hover{
+    transform: translateY(-10px);
+}
+
+.text-container {
+    /* Define a perspectiva para os elementos filhos */
+    perspective: 1000px; /* Quanto menor o valor, maior a distorção 3D */
+}
+
+.animated-text {
+    color: rgb(255, 203, 248);
+    padding: 15px 30px;
+    border-radius: 10px;
+
+    /* Define a origem da transformação (geralmente o centro é bom para texto) */
+    transform-origin: center center;
+
+    /* Estado inicial do texto (sem transformação) */
+    transform: rotateX(0deg) rotateY(0deg) translateZ(0px) scale(1);
+
+    /* Transição suave para todas as transformações */
+    transition: transform 0.6s ease-in-out;
+    cursor: pointer; /* Indica que é interativo */
+}
+
+.text-container p{
+    font-weight: lighter;
+}
+
+/* Efeito ao passar o mouse */
+.animated-text:hover {
+    /* Rotação: Gira um pouco nos eixos X e Y */
+    transform: rotateX(0deg) rotateY(12deg) 
+               /* Aproximação: Move o elemento no eixo Z (para fora da tela) */
+               translateZ(90px) 
+               /* Aumento de tamanho: Opcional, para complementar a aproximação */
+               scale(1.07); 
+}
 
 @keyframes fade {
     0%{

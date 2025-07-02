@@ -1,0 +1,51 @@
+.box-baricon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+}
+
+.health-bar-container {
+            width: 80px; /* Largura total da barra para todos os exemplos */
+            height: 10px;
+            background-color: #ddd; /* Cor de fundo da barra vazia */
+            border-radius: 5px;
+            overflow: hidden;
+            border: 1px solid #bbb; /* Uma pequena borda para destacar */
+        }
+
+        .health-bar-fill {
+            width: 0%; /* Inicia vazio, preenchido por JS */
+            height: 100%;
+            border-radius: 5px; /* Bordas arredondadas para o preenchimento também */
+            transition: width 0.7s ease-out, background-color 0.7s ease-out; /* Transição suave para largura e cor */
+        }
+
+        /* Classes de cores baseadas na porcentagem */
+        .color-ai {
+            background-color: #FF9D08; /* Vermelho */
+        }
+        .color-ps {
+            background-color: #37ABFF; /* Laranja */
+        }
+        .color-id {
+            background-color: #FF396B; /* Cinza para 0% ou desabilitado */
+        }
+        .color-ae {
+            background-color: #BE89F3; /* Amarelo */
+        }
+        .color-cd {
+            background-color: #91F086; /* Verde */
+        }
+
+        .hidden{
+            opacity: 0;
+            transform: translateY(100%);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+
+        .show{
+            opacity: 1;
+            transform: translateY(-80%);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }

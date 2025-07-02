@@ -64,13 +64,8 @@ span{
 }
 
 .parallax-section h2 {
-    font-size: 2.3em;
+    font-size: 2.225em;
     letter-spacing: 2px;
-    text-shadow: 
-        -1px -1px 0 rgba(0, 0, 0, 0.6),  /* -1px e -1px são os valores para alterar */
-        1px -1px 0 rgba(0, 0, 0, 0.6),   /* 1px e -1px são os valores para alterar */
-        -1px 1px 0 rgba(0, 0, 0, 0.6),   /* -1px e 1px são os valores para alterar */
-        1px 1px 0 rgba(0, 0, 0, 0.6);    /* 1px e 1px são os valores para alterar */
     margin: 40px 0;
 }
 
@@ -102,7 +97,7 @@ span{
 
 /* Imagens para cada seção */
 .parallax-one {
-    background-image: url(/assets/images/backnuvens.jpg); /* Imagem de exemplo 1 */
+    background-image: linear-gradient(to right top, #ff8aed, #cc66be, #9c4491, #6e2367, #43003f);
 }
 
 .parallax-two {

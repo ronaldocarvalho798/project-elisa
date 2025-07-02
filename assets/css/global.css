@@ -7,8 +7,6 @@
     --fundo-elementos: #FDAFAD;
     --fundo-rosa-elementos: #F25174;
     --fundo-rosa-elementos-light: #f0859c;
-    --link-color: #9A9A9C;
-    --icon-color: #C7C8C9;
 }
 
 @font-face {
@@ -43,6 +41,6 @@ html{
 }
 
 body{
-    background-color: var(--primary-bg-color);
+    background-color: #fff8f8 ;
 }
 
