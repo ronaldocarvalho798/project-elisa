@@ -21,18 +21,35 @@ header{
 main{
     position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    height: 640px;
+    height: 99vh;
 }
 
-img{
-    width: 900px;
+main h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.825rem;
+    font-weight: 400;
 }
 
-nav{
+.btm-explore{
+    font-family: "Montserrat", sans-serif;
     position: relative;
+    top: 20px;
+    color: #511F76;
+    font-weight: 600;
+}
+
+.btm-explore::after {
+    content: ''; 
+    display: block; 
+    width: 88%; 
+    height: 1px; 
+    background-color: #511F76; 
+    position: absolute;
+    bottom: -1px;
 }
 
 .chibi{
@@ -46,6 +63,7 @@ nav{
 
 .nav-container ul{
     display: flex;
+    align-items: center;
     gap: 20px;
     padding: 5px; 
     border-radius: 0 15px 15px 0;
@@ -74,10 +92,14 @@ nav{
 }
 
 .itens-nav a{
-    color: #8f4be7d3;
+    color: black;
     font-size: 1rem;
     text-transform: uppercase;
     transition: 0.3s ease-in-out;
+}
+
+.itens-nav a.active{
+    color: rgb(81, 31, 118);
 }
 
 
@@ -129,27 +151,8 @@ li{
 }
 
 li .bi{
-    margin-right: 10px;
+    font-size: 2rem;
 }
-
-li .bi, li .t{
-    font-size: .9rem;
-    font-weight: 700;
-    color: #f3aaba;
-    transition: 0.5s ease-in-out;
-}
-
-li:hover .t,
-li:hover .bi {
-    color: var(--fundo-rosa-elementos);
-}
-
-li .t{
-    color: #98d8ff;
-    text-transform: lowercase;
-    font-weight: 900;
-}
-
 
 .container-links{
     position: relative; /* Essencial para posicionar o ::after */

@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio Elisa</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -17,8 +16,8 @@
     <style>
         .containerrr {
             cursor: pointer;
-            width: 700px; /* Largura do contêiner */
-            height: 300px; /* Altura do contêiner */
+            width: 400px; /* Largura do contêiner */
+            height: 150px; /* Altura do contêiner */
             background-image: url('/assets/images/backgroundskyroxo.jpg'); /* A imagem que você quer que apareça */
             background-size: cover;
             background-position: center;
@@ -31,6 +30,7 @@
             -webkit-mask-position: center;
             mask-position: center;
             transition: 0.7s ease-in-out;
+            margin-bottom: 50px;
         }
 
         .containerrr:hover {
@@ -41,18 +41,47 @@
 </head>
 <body>
 
-    <div class="header-desktop" style="display: flex; padding: 1.5rem 6rem; justify-content: left;">
-        <nav class="nav-container">
-            <ul style="border-radius: 15px;">
-                <li class="itens-nav hidden" ><a href="#topo">Início</a></li>
+    <div class="header-desktop">
+        <nav class="nav-container" style="display: flex; min-width: 30%;">
+            <ul>
+                <li class="itens-nav hidden" ><a href="#topo" class="active">Início</a></li>
                 <li class="itens-nav hidden" ><a href="#about">Sobre</a></li>
-                <li class="itens-nav hidden" ><a href="#">Projetos</a></li>
+                <li class="itens-nav hidden" ><a href="#projetos">Projetos</a></li>
+            </ul>
+        </nav>
+        <img src="/assets/images/logoprint2.png" alt="" style="width: 50px;">
+         <nav class="nav-container" style="display: flex; justify-content: flex-end; min-width: 30%;">
+            <ul>
+                <li class="itens-nav hidden" ><a href="#loja"><!-- From Uiverse.io by ilkhoeri --> 
+<button type="button" class="button">
+  <div class="points_wrapper">
+    <i class="point"></i>
+    <i class="point"></i>
+    <i class="point"></i>
+    <i class="point"></i>
+    <i class="point"></i>
+    <i class="point"></i>
+    <i class="point"></i>
+    <i class="point"></i>
+    <i class="point"></i>
+    <i class="point"></i>
+  </div>
+
+  <span class="inner"
+
+    >Loja</span
+  >
+</button>
+</a></li>
+                <li class="itens-nav hidden" ><a href="#about"><i class="bi bi-phone"></i></a></li>
             </ul>
         </nav>
     </div>
     
     <main>
         <div class="containerrr"></div>
+        <h1>Design Criativo & Inovação com Propósito.</h1>
+        <a href="#" class="btm-explore">Explore Portfolio <i class="bi bi-arrow-right"></i></a>
     </main>
 
     <div class="parallax-section parallax-one" >
