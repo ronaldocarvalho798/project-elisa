@@ -42,12 +42,12 @@ html{
 }
 
 body{
-    background-color: #fff8f8 ;
+    background-color: #ffffff ;
 }
 
 .header-desktop{
     display: flex; 
-    background-color: #fff8f8; 
+    background-color: #ffffff; 
     padding: 1rem 15rem; 
     justify-content: space-between; 
     align-items: center; 
@@ -80,6 +80,10 @@ body{
   outline: none;
   padding: 6px 22px;
   text-transform: uppercase;
+}
+
+.button:hover{
+    transform: scale(1.05);
 }
 
 .button:active {
