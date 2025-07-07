@@ -97,7 +97,10 @@ span{
 
 /* Imagens para cada seção */
 .parallax-one {
-   background-color: #1A1A1C;
+   background-image: url(/assets/images/backgroundskyroxo.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 .parallax-two {
