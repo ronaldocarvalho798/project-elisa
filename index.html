@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="/assets/css/sob.css">
     <link rel="stylesheet" href="/assets/css/bar.css">
+    <link rel="stylesheet" href="/assets/css/sectionsob.css">
     <script src="/assets/script/script.js" defer></script>
+    <script src="/assets/script/enginesectionsob.js" defer></script>
     <style>
         .containerrr {
             cursor: pointer;
@@ -139,31 +141,83 @@
                     </div>
                 </div>
         </div>
-        <div class="container-bottom">
-    <div class="wrapper-collum"> <div class="container-collum">
-            <div class="text-container">
-                <h2 class="animated-text">Formação</h2>
-                <p  class="animated-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat enim, aliquid harum pariatur doloribus quod quaerat molestiae velit odio omnis. Incidunt maxime dolor distinctio magnam, ut illo voluptatum fugit placeat.</p>
-            </div>
-        </div>
-    </div>
+        <section class="about-section">
+        <div class="container-tabs-content">
+            <ul class="tab-list" role="tablist">
+                <li class="tab-item">
+                    <button
+                        id="tab-formacao"
+                        class="tab-button active"
+                        role="tab"
+                        aria-selected="true"
+                        aria-controls="content-formacao"
+                        tabindex="0"
+                    >
+                        Formação
+                    </button>
+                </li>
+                <li class="tab-item">
+                    <button
+                        id="tab-core-skills"
+                        class="tab-button"
+                        role="tab"
+                        aria-selected="false"
+                        aria-controls="content-core-skills"
+                        tabindex="-1"
+                    >
+                        Core Skills
+                    </button>
+                </li>
+                <li class="tab-item">
+                    <button
+                        id="tab-soft-skills"
+                        class="tab-button"
+                        role="tab"
+                        aria-selected="false"
+                        aria-controls="content-soft-skills"
+                        tabindex="-1"
+                    >
+                        Soft Skills
+                    </button>
+                </li>
+            </ul>
 
-    <div class="wrapper-collum"> <div class="container-collum">
-            <div class="text-container">
-                <h2 class="animated-text">Core Skills</h2>
-                <p class="animated-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quis doloribus a illo dolorem praesentium, sed accusamus delectus cupiditate explicabo laboriosam maxime, facere id eligendi necessitatibus quod ullam temporibus repellendus!</p>
+            <div id="content-formacao" class="tab-panel active" role="tabpanel" aria-labelledby="tab-formacao">
+                <div class="content-left">
+                    <h2>Minha jornada acadêmica e evolução</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quas voluptatum praesentium quaerat quod perspiciatis repellendus ad nulla minima distinctio. Ad at consectetur doloremque aspernatur vitae molestiae nobis accusamus neque. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="content-right">
+                    <img src="/assets/images/imagem.jpg" alt="Ilustração de crescimento e conhecimento">
+                </div>
             </div>
-        </div>
-    </div>
 
-    <div class="wrapper-collum"> <div class="container-collum">
-            <div class="text-container">
-                <h2 class="animated-text">Soft Skills</h2>
-                <p class="animated-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus debitis quos accusantium nihil. Praesentium, soluta non nostrum temporibus consectetur sapiente cumque consequuntur aperiam porro architecto optio! Aliquid fugiat ullam soluta?</p>
+            <div id="content-core-skills" class="tab-panel hidden" role="tabpanel" aria-labelledby="tab-core-skills" hidden>
+                <div class="content-left">
+                    <h2>Ferramentas e habilidades essenciais</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quas voluptatum praesentium quaerat quod perspiciatis repellendus ad nulla minima distinctio. Ad at consectetur doloremque aspernatur vitae molestiae nobis accusamus neque. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="content-right">
+                    <img src="/assets/images/imagem.jpg" alt="Ilustração de ferramentas e habilidades técnicas">
+                </div>
             </div>
+
+            <div id="content-soft-skills" class="tab-panel hidden" role="tabpanel" aria-labelledby="tab-soft-skills" hidden>
+                <div class="content-left">
+                    <h2>Competências que impulsionam a criatividade</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quas voluptatum praesentium quaerat quod perspiciatis repellendus ad nulla minima distinctio. Ad at consectetur doloremque aspernatur vitae molestiae nobis accusamus neque. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="content-right">
+                    <img src="/assets/images/imagem.jpg" alt="Ilustração de colaboração e criatividade">
+                </div>
+            </div>
+
+            <div class="action-button-container">
+                <a href="#" class="action-button">Ver Projetos <span class="arrow-icon">→</span></a>
+            </div>
+
         </div>
-    </div>
-</div>
+    </section>
     </div>
 
     <div class="content">

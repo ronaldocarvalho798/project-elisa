@@ -97,7 +97,7 @@ span{
 
 /* Imagens para cada seção */
 .parallax-one {
-    background-image: linear-gradient(to right top, #ff8aed, #cc66be, #9c4491, #6e2367, #43003f);
+   background-color: #1A1A1C;
 }
 
 .parallax-two {

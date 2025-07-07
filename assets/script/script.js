@@ -59,7 +59,7 @@ function updateHealthBar(barId, percentage) {
                     textBottom.classList.add('show');
                     textBottom.classList.remove('hidden');
                 }
-            }, 300); // <-- Atraso de 300 milissegundos
+            }, 400); // <-- Atraso de 300 milissegundos
         });
 
         icon.addEventListener('mouseleave', () => {

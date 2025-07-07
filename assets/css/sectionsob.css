@@ -1,0 +1,164 @@
+/* Seção "Sobre" */
+        .about-section {
+            padding: 4rem 8rem; /* Aumentei o padding vertical para mais espaço */
+            max-width: 1400px; /* Limita a largura para melhor leitura */
+            margin: 0 auto; /* Centraliza a seção na página */
+            display: flex;
+            flex-direction: column;
+            gap: 3rem; /* Espaçamento entre as abas e o conteúdo */
+        }
+
+        /* Container que envolve as abas e o conteúdo principal */
+        .container-tabs-content {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem; /* Espaçamento entre a lista de abas e o painel ativo */
+        }
+
+        /* Lista de abas (menu) */
+        .tab-list {
+            display: flex;
+            justify-content: space-between; /* Distribui as abas uniformemente */
+            gap: 1.5rem; /* Espaçamento entre os botões das abas */
+            padding-bottom: 1.5rem; /* Espaçamento abaixo das abas */
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Linha divisória sutil */
+        }
+
+        /* Botões das abas */
+        .tab-button {
+            cursor: pointer;
+            border: none;
+            background-color: transparent; /* Padrão transparente */
+            text-transform: uppercase;
+            color: #E0E0E0; /* Cor do texto para abas inativas */
+            padding: 14px 18px;
+            border-radius: 10px; /* Bordas arredondadas para os botões */
+            font-size: 1.05rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+            width: 100%; /* Faz o botão preencher o item da lista */
+            text-align: center;
+        }
+
+        /* Estilo para o botão de aba ativo */
+        .tab-button.active {
+            background-color: #9956F6; /* Roxo vibrante da referência */
+            color: white;
+            box-shadow: 0 0 15px rgba(153, 86, 246, 0.4); /* Sombra para dar destaque */
+        }
+
+        /* Efeito hover para botões NÃO ativos */
+        .tab-item:not(:first-child) .tab-button:hover:not(.active) { /* Adicionado :not(.active) para não afetar o botão ativo */
+            background-color: #ffffff1b; /* Fundo translúcido */
+            color: white; /* Mantém o texto branco no hover */
+        }
+        
+        /* Também pode adicionar um hover para o botão ativo que mantenha o brilho, se quiser */
+        .tab-button.active:hover {
+            background-color: #A966FF; /* Um tom ligeiramente mais claro para hover do ativo */
+            box-shadow: 0 0 20px rgba(153, 86, 246, 0.6);
+        }
+
+        /* Painel de conteúdo da aba */
+        .tab-panel {
+            display: flex;
+            align-items: center; /* Centraliza verticalmente o conteúdo */
+            gap: 5rem; /* Espaçamento entre o texto e a imagem */
+            background-color: #1A1A1C; /* Fundo levemente mais claro para o painel */
+            padding: 3rem;
+            border-radius: 15px; /* Bordas arredondadas para o painel */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Sombra suave para profundidade */
+            animation: fadeIn 0.5s ease-out; /* Animação ao mostrar o painel */
+        }
+
+        /* Animação de fade-in para o conteúdo do painel */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Esconder painéis inativos */
+        .tab-panel.hidden {
+            display: none;
+        }
+
+        /* Conteúdo esquerdo (texto) */
+        .content-left {
+            flex: 2; /* Ocupa 2/3 do espaço */
+            padding-right: 2rem; /* Espaçamento interno à direita */
+        }
+
+        .content-left h2 {
+            font-family: 'Montserrat', sans-serif; /* Fonte para títulos */
+            font-size: 1.5rem; /* Tamanho maior para o título */
+            font-weight: 600;
+            color: white;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .content-left p {
+            font-size: 1.1rem;
+            color: #B0B0B0; /* Cor mais suave para o parágrafo */
+        }
+
+        /* Conteúdo direito (imagem/ilustração) */
+        .content-right {
+            flex: 1; /* Ocupa 1/3 do espaço */
+            display: flex;
+            justify-content: center; /* Centraliza a imagem */
+            align-items: center;
+            min-height: 300px; /* Garante uma altura mínima para a ilustração */
+        }
+
+        .content-right img {
+            max-width: 100%; /* Garante que a imagem não transborde */
+            height: auto;
+            border-radius: 10px; /* Bordas arredondadas para as imagens */
+            opacity: 0.8; /* Leve opacidade para combinar com o tema */
+            transition: opacity 0.3s ease-in-out;
+        }
+        
+        .content-right img:hover {
+            opacity: 1; /* Aumenta a opacidade no hover, se desejar */
+        }
+
+        /* Botão de Ação (opcional) */
+        .action-button-container {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .action-button {
+            display: inline-flex; /* Para alinhar texto e seta */
+            align-items: center;
+            background-color: #9956F6; /* Cor do botão de ação */
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px; /* Botão pilular */
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+            box-shadow: 0 5px 20px rgba(153, 86, 246, 0.4);
+        }
+
+        .action-button:hover {
+            background-color: #A966FF; /* Cor mais clara no hover */
+            transform: translateY(-3px); /* Pequeno efeito de elevação */
+            box-shadow: 0 8px 25px rgba(153, 86, 246, 0.6);
+        }
+
+        .arrow-icon {
+            margin-left: 10px;
+            font-size: 1.3rem;
+            line-height: 1;
+        }
+
+        .content-right img {
+    max-width: 120%; /* Adjust this percentage to control the maximum width relative to .content-right */
+    height: 400px; /* Set your desired fixed height here (adjust the value as needed) */
+    object-fit: cover; /* Crop the image to fill the height and width, maintaining aspect ratio */
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
