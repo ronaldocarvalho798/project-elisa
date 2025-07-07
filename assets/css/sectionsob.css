@@ -12,7 +12,7 @@
         .container-tabs-content {
             display: flex;
             flex-direction: column;
-            gap: 2.5rem; /* Espaçamento entre a lista de abas e o painel ativo */
+            gap: 1.2rem; /* Espaçamento entre a lista de abas e o painel ativo */
         }
 
         /* Lista de abas (menu) */
@@ -21,7 +21,7 @@
             justify-content: space-between; /* Distribui as abas uniformemente */
             gap: 1.5rem; /* Espaçamento entre os botões das abas */
             padding-bottom: 1.5rem; /* Espaçamento abaixo das abas */
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Linha divisória sutil */
+            border-bottom: 1px solid rgba(255, 255, 255, 0.22); /* Linha divisória sutil */
         }
 
         /* Botões das abas */
@@ -63,7 +63,7 @@
         .tab-panel {
             display: flex;
             align-items: center; /* Centraliza verticalmente o conteúdo */
-            gap: 5rem; /* Espaçamento entre o texto e a imagem */
+            gap: 2rem; /* Espaçamento entre o texto e a imagem */
             background-color: #1A1A1C; /* Fundo levemente mais claro para o painel */
             padding: 3rem;
             border-radius: 15px; /* Bordas arredondadas para o painel */
@@ -84,8 +84,8 @@
 
         /* Conteúdo esquerdo (texto) */
         .content-left {
-            flex: 2; /* Ocupa 2/3 do espaço */
-            padding-right: 2rem; /* Espaçamento interno à direita */
+            flex: 1.5; 
+            padding-right: 2rem; 
         }
 
         .content-left h2 {
@@ -93,7 +93,8 @@
             font-size: 1.5rem; /* Tamanho maior para o título */
             font-weight: 600;
             color: white;
-            margin-bottom: 1.5rem;
+            margin: 0;
+            margin-bottom: 20px;
             line-height: 1.2;
         }
 
@@ -109,14 +110,6 @@
             justify-content: center; /* Centraliza a imagem */
             align-items: center;
             min-height: 300px; /* Garante uma altura mínima para a ilustração */
-        }
-
-        .content-right img {
-            max-width: 100%; /* Garante que a imagem não transborde */
-            height: auto;
-            border-radius: 10px; /* Bordas arredondadas para as imagens */
-            opacity: 0.8; /* Leve opacidade para combinar com o tema */
-            transition: opacity 0.3s ease-in-out;
         }
         
         .content-right img:hover {
@@ -155,10 +148,13 @@
         }
 
         .content-right img {
-    max-width: 120%; /* Adjust this percentage to control the maximum width relative to .content-right */
-    height: 400px; /* Set your desired fixed height here (adjust the value as needed) */
-    object-fit: cover; /* Crop the image to fill the height and width, maintaining aspect ratio */
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;
-}
+            cursor: pointer;
+            opacity: 0.8;
+            transition: opacity 0.3s ease-in-out;
+            max-width: 100%; 
+            height: 400px; 
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+        }   
