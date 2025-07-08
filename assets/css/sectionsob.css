@@ -157,4 +157,22 @@
             display: block;
             margin: 0 auto;
             border-radius: 10px;
-        }   
+        }
+
+        .title-sob{
+            font-size: 1.775rem;
+            margin-bottom: 15px;
+        }
+
+        .li-sob{
+            list-style: disc;
+            text-transform: capitalize;
+            margin-left: 1.25rem;
+        }
+
+        .li-bot{
+            font-weight: 200;
+            font-family: Raleway, sans-serif; 
+            margin-bottom: 20px;
+            margin-left: 1.25rem;
+        }
