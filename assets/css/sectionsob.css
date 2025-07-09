@@ -160,13 +160,13 @@
         }
 
         .title-sob{
-            font-size: 1.775rem;
+            font-size: 2rem;
+            font-weight: bold;
             margin-bottom: 15px;
         }
 
         .li-sob{
             list-style: disc;
-            text-transform: capitalize;
             margin-left: 1.25rem;
         }
 
@@ -175,4 +175,10 @@
             font-family: Raleway, sans-serif; 
             margin-bottom: 20px;
             margin-left: 1.25rem;
+        }
+
+        .li-right{
+            list-style: disc;
+            font-weight: 200;
+            margin-bottom: 20px;
         }
