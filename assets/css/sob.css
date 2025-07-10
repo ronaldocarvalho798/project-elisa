@@ -120,3 +120,19 @@ span{
     padding: 50px 20px;
     font-size: 1.2em;
 }
+
+
+.about-icons{
+    display: flex;
+    align-items: center; 
+    gap: .85rem; 
+}
+
+.description-form{
+    font-weight: 200;
+    font-family: "Montserrat", sans-serif;
+}
+
+.margin-bot{
+    margin-bottom: 1rem;
+}
