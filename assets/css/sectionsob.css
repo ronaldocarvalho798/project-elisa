@@ -30,7 +30,7 @@
             border: none;
             background-color: transparent; /* Padrão transparente */
             text-transform: uppercase;
-            color: #E0E0E0; /* Cor do texto para abas inativas */
+            color: #0b0b0b; /* Cor do texto para abas inativas */
             padding: 14px 18px;
             border-radius: 10px; /* Bordas arredondadas para os botões */
             font-size: 1.05rem;
@@ -48,9 +48,9 @@
         }
 
         /* Efeito hover para botões NÃO ativos */
-        .tab-item:not(:first-child) .tab-button:hover:not(.active) { /* Adicionado :not(.active) para não afetar o botão ativo */
+        .tab-item .tab-button:hover:not(.active) { /* Adicionado :not(.active) para não afetar o botão ativo */
             background-color: #ffffff1b; /* Fundo translúcido */
-            color: white; /* Mantém o texto branco no hover */
+            color: #9956F6; /* Mantém o texto branco no hover */
         }
         
         /* Também pode adicionar um hover para o botão ativo que mantenha o brilho, se quiser */
