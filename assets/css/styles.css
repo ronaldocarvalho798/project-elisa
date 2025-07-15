@@ -19,13 +19,17 @@ header{
 }
 
 main{
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 99vh;
+}
+
+.fade-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    height: 99vh;
+    animation: fade 1.3s ease-in-out forwards;
 }
 
 main h1{
@@ -66,9 +70,13 @@ main h1{
     align-items: center;
     gap: 20px;
     padding: 5px; 
-    border-radius: 0 15px 15px 0;
-    animation: slidefade 1.2s ease-out;
-    animation-delay: 200ms;
+}
+
+.cont-btncontact{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 5px; 
 }
 
 @keyframes slidefade {
@@ -102,8 +110,6 @@ main h1{
     color: rgb(81, 31, 118);
 }
 
-
-
 .itens-nav:nth-child(1){
     animation: slidefade 0.5s ease-in-out forwards;
     animation-delay: 1300ms;
@@ -119,6 +125,36 @@ main h1{
 .itens-nav:nth-child(4){
     animation: slidefade 0.5s ease-in-out forwards;
     animation-delay: 1600ms;
+}
+
+.logo{
+    width: 50px;
+    animation: logoanim .5s ease-in-out forwards;
+    animation-delay: 1900ms;
+}
+
+#btn-store{
+    animation: slidefade 0.5s ease-in-out forwards;
+    animation-delay: 2600ms;
+}
+
+#contact{
+    animation: slidefade 0.5s ease-in-out forwards;
+    animation-delay: 2800ms;
+}
+
+
+
+@keyframes logoanim {
+    0%{
+        opacity: 0;
+        transform: scale(.3);
+    }
+
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .links{
@@ -367,7 +403,7 @@ li .bi{
 @keyframes fade {
     0%{
         opacity: 0;
-        transform: translateY(10px);
+        transform: translateY(50px);
     }
     100%{
         opacity: 1;

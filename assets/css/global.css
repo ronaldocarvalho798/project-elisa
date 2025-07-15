@@ -41,20 +41,39 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
-    background-color: #ffffff ;
-}
-
 .header-desktop{
     display: flex; 
-    background-color: #ffffff; 
-    padding: 1rem 15rem; 
     justify-content: space-between; 
     align-items: center; 
-    position: fixed; 
+    position: fixed;
+    background-color: white;
+    padding: 1rem 15rem; 
     z-index: 100; 
     width: 100%; 
-    border-bottom: 1px solid #fff3f3;
+}
+
+.header-desktop::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background-image: linear-gradient(90deg, #ffffff, #4a049488); /* Repeat the colors for a smoother loop */
+  background-size: 600% 100%;
+  animation: gradientFlow 4.5s ease-in-out forwards;
+}
+
+@keyframes gradientFlow {
+  0% {
+    width: 1%;
+    opacity: 1;
+    background-position: 0% 0%;
+  }
+  100% {
+    width: 100%;
+    opacity: .5;
+    background-position: 100% 0%; 
+  }
 }
 
 
