@@ -64,10 +64,9 @@
             display: flex;
             align-items: center; /* Centraliza verticalmente o conteúdo */
             gap: 2rem; /* Espaçamento entre o texto e a imagem */
-            background-color: #1A1A1C; /* Fundo levemente mais claro para o painel */
             padding: 3rem;
             border-radius: 15px; /* Bordas arredondadas para o painel */
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Sombra suave para profundidade */
+     
             animation: fadeIn 0.5s ease-out; /* Animação ao mostrar o painel */
         }
 
