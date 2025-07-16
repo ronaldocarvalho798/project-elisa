@@ -16,6 +16,57 @@
     <link rel="stylesheet" href="/assets/css/sectionsob.css">
     <script src="/assets/script/script.js" defer></script>
     <script src="/assets/script/enginesectionsob.js" defer></script>
+    <style>
+         .carousel-container {
+            position: relative;
+            height: 400px;
+            max-width: 320px;
+            overflow: hidden;
+            box-shadow: 7px 5px 17px 2px rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
+        }
+
+        .carousel-track {
+            display: flex;
+            width: 300%; /* 3 imagens = 300% */
+            height: 100%;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-slide {
+            width: 33.333%; /* 100% / 3 imagens */
+            height: 100%;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Indicadores do carrossel */
+        .carousel-indicators {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+        }
+
+        .indicator {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .indicator.active {
+            background-color: rgba(255, 255, 255, 1);
+        }
+    </style>
 </head>
 <body>
     <div class="header-desktop">
@@ -27,6 +78,7 @@
         <img class="logo hidden" src="/assets/images/logoprint2.png" alt="logo">
         <div style="display: flex; justify-content: flex-end; min-width: 30%;"><li class="itens-nav hidden" ><a href="/index.html" class="active">Acessar Portólio</a></li></div>
     </div>
+
     <section class="about-section" style="padding-top: 100px;">
         <div class="container-tabs-content">
             <ul class="tab-list" role="tablist">
@@ -87,18 +139,108 @@
         </div>
     </section>
 
-    <section style="display: flex; flex-direction: column; max-width: 1400px; padding: 4rem 8rem; margin: auto; gap: 2rem;">
+     <section style="display: flex; flex-direction: column; max-width: 1400px; padding: 4rem 8rem; margin: auto; gap: 2rem;">
         <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 2rem;">
-            <img style="height: 400px; max-width: 350px; object-fit: cover; box-shadow: 7px 5px 17px 2px rgba(0, 0, 0, 0.25); border-radius: 5px;" src="/assets/images/3.png" alt=""></img>
-            <img style="height: 400px; max-width: 350px; object-fit: cover; box-shadow: 7px 5px 17px 2px rgba(0, 0, 0, 0.25); border-radius: 5px;"src="/assets/images/1.png" alt=""></img>
-            <img style="height: 400px; max-width: 350px; object-fit: cover; box-shadow: 7px 5px 17px 2px rgba(0, 0, 0, 0.25); border-radius: 5px;" src="/assets/images/2.png" alt=""></img>
-        </div>
-        <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 2rem;">
-            <img style="height: 400px; max-width: 350px; object-fit: cover; box-shadow: 7px 5px 17px 2px rgba(0, 0, 0, 0.25); border-radius: 5px;" src="/assets/images/3.png" alt=""></img>
-            <img style="height: 400px; max-width: 350px; object-fit: cover; box-shadow: 7px 5px 17px 2px rgba(0, 0, 0, 0.25); border-radius: 5px;"src="/assets/images/1.png" alt=""></img>
-            <img style="height: 400px; max-width: 350px; object-fit: cover; box-shadow: 7px 5px 17px 2px rgba(0, 0, 0, 0.25); border-radius: 5px;" src="/assets/images/2.png" alt=""></img>
+            <img style="height: 400px; max-width: 350px; object-fit: cover; box-shadow: 7px 5px 17px 2px rgba(0, 0, 0, 0.25); border-radius: 5px;" src="/assets/images/3.png" alt="">
+            <img style="height: 400px; max-width: 350px; object-fit: cover; box-shadow: 7px 5px 17px 2px rgba(0, 0, 0, 0.25); border-radius: 5px;" src="/assets/images/1.png" alt="">
+            
+            <!-- Carrossel substituindo a terceira imagem -->
+            <div class="carousel-container">
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="carousel-slide">
+                        <img src="/assets/images/2.png" alt="Imagem 1">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="/assets/images/1.png" alt="Imagem 2">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="/assets/images/3.png" alt="Imagem 3">
+                    </div>
+                </div>
+                
+                <!-- Indicadores -->
+                <div class="carousel-indicators">
+                    <div class="indicator active" data-slide="0"></div>
+                    <div class="indicator" data-slide="1"></div>
+                    <div class="indicator" data-slide="2"></div>
+                </div>
+            </div>
         </div>
         
+        <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 2rem;">
+            <img style="height: 400px; max-width: 350px; object-fit: cover; box-shadow: 7px 5px 17px 2px rgba(0, 0, 0, 0.25); border-radius: 5px;" src="/assets/images/3.png" alt="">
+            <img style="height: 400px; max-width: 350px; object-fit: cover; box-shadow: 7px 5px 17px 2px rgba(0, 0, 0, 0.25); border-radius: 5px;" src="/assets/images/1.png" alt="">
+            <img style="height: 400px; max-width: 350px; object-fit: cover; box-shadow: 7px 5px 17px 2px rgba(0, 0, 0, 0.25); border-radius: 5px;" src="/assets/images/2.png" alt="">
+        </div>
     </section>
+
+     <script>
+        class Carousel {
+            constructor() {
+                this.track = document.getElementById('carouselTrack');
+                this.indicators = document.querySelectorAll('.indicator');
+                this.currentSlide = 0;
+                this.totalSlides = 3;
+                this.autoPlayInterval = null;
+                
+                this.init();
+            }
+
+            init() {
+                // Adicionar event listeners aos indicadores
+                this.indicators.forEach((indicator, index) => {
+                    indicator.addEventListener('click', () => {
+                        this.goToSlide(index);
+                    });
+                });
+
+                // Iniciar autoplay
+                this.startAutoPlay();
+
+                // Pausar autoplay quando o mouse estiver sobre o carrossel
+                const container = document.querySelector('.carousel-container');
+                container.addEventListener('mouseenter', () => this.stopAutoPlay());
+                container.addEventListener('mouseleave', () => this.startAutoPlay());
+            }
+
+            goToSlide(slideIndex) {
+                this.currentSlide = slideIndex;
+                const translateX = -(slideIndex * 33.333);
+                this.track.style.transform = `translateX(${translateX}%)`;
+                
+                // Atualizar indicadores
+                this.updateIndicators();
+            }
+
+            updateIndicators() {
+                this.indicators.forEach((indicator, index) => {
+                    indicator.classList.toggle('active', index === this.currentSlide);
+                });
+            }
+
+            nextSlide() {
+                this.currentSlide = (this.currentSlide + 1) % this.totalSlides;
+                this.goToSlide(this.currentSlide);
+            }
+
+            startAutoPlay() {
+                this.autoPlayInterval = setInterval(() => {
+                    this.nextSlide();
+                }, 3000); // Muda a cada 3 segundos
+            }
+
+            stopAutoPlay() {
+                if (this.autoPlayInterval) {
+                    clearInterval(this.autoPlayInterval);
+                    this.autoPlayInterval = null;
+                }
+            }
+        }
+
+        // Inicializar o carrossel quando a página carregar
+        document.addEventListener('DOMContentLoaded', () => {
+            new Carousel();
+        });
+    </script>
 </body>
 </html>
