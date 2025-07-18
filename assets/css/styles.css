@@ -1,7 +1,5 @@
 header{
     padding: 1rem;
-    animation: fadetopbot 1.2s ease-in-out forwards;
-    animation-delay: 200ms;
 }
 
 .container{
@@ -141,6 +139,11 @@ main h1{
 #contact{
     animation: slidefade 0.5s ease-in-out forwards;
     animation-delay: 2800ms;
+}
+
+#acess{
+    animation: slidefade 0.5s ease-in-out forwards;
+    animation-delay: 2600ms;
 }
 
 
