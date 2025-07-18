@@ -20,7 +20,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 99vh;
+    height: 100vh;
 }
 
 .fade-content {

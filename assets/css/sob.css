@@ -97,7 +97,8 @@ span{
 
 /* Imagens para cada seção */
 .parallax-one {
-   background-image: url(/assets/images/backgroundskyroxo.jpg);
+    position: relative;
+   background-image: url(/assets/images/estrelas.jpg);
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
