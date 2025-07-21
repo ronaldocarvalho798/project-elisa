@@ -9,11 +9,20 @@
     }
 
     main{
-        padding: 12rem 3rem;
+        padding: 12rem 1.5rem;
     }
 
     main h1{
         font-size: 1.225rem;
         text-align: center;
+    }
+
+    .containerrr{
+        max-width: 300px;
+        margin-bottom: 55px;
+    }
+    
+    .btm-explore{
+       margin-top: 10px;
     }
 }
