@@ -1,0 +1,19 @@
+@media (max-width:768px) {
+    .nav-container{
+        display: none;
+    }
+
+    .header-desktop{
+        justify-content: center;
+        padding: 1rem 6rem;
+    }
+
+    main{
+        padding: 12rem 3rem;
+    }
+
+    main h1{
+        font-size: 1.225rem;
+        text-align: center;
+    }
+}

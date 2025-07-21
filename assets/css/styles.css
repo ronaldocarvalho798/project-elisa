@@ -20,7 +20,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    padding: 15rem 6rem;
 }
 
 .fade-content {
@@ -61,6 +61,11 @@ main h1{
 
 .test{
     background-image: url(/assets/);
+}
+
+.nav-container{
+    display: flex;
+    min-width: 30%;
 }
 
 .nav-container ul{
