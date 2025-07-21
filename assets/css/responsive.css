@@ -12,6 +12,11 @@
         padding: 12rem 1.5rem;
     }
 
+    .main-sob{
+        width: 100%;
+        padding: 2rem;
+    }
+
     main h1{
         font-size: 1.225rem;
         text-align: center;
