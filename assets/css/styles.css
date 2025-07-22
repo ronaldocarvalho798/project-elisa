@@ -301,6 +301,10 @@ li .bi{
     filter: sepia(100%) hue-rotate(270deg);
 }
 
+#fig{
+        width: 52px;
+}
+
 
 
 .container-icons{

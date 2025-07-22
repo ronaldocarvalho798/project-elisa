@@ -1,4 +1,8 @@
 @media (max-width:768px) {
+    .header-desktop{
+        position: relative;
+    }
+
     .nav-container{
         display: none;
     }
@@ -74,5 +78,35 @@
 
     footer p{
         font-size: 1rem;
+    }
+}
+
+
+@media (max-width:425px){
+    .container-icons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2px;
+    }
+
+    .health-bar-container {
+        width: 60px;
+        height: 6px;
+        background-color: #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+        border: 1px solid #bbb;
+    }
+
+    .container-icons img {
+        width: 60px;
+    }
+
+    #fig{
+        width: 40px;
+    }
+
+    .text-bottom{
+        font-size: 13px;
     }
 }
