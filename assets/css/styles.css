@@ -20,7 +20,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 15rem 6rem;
+    padding: 11rem 6rem 10rem 6rem;
 }
 
 .fade-content {
@@ -418,15 +418,15 @@ li .bi{
     left: 50%;
     transform: translate(-50%, -50%) rotate(0deg);
     cursor: pointer;
-    margin-top: 250px;
+    margin-top: 270px;
 }
 
 .arrow span {
     display: block;
-    width: 24px;
-    height: 24px;
-    border-bottom: 4px solid #823cb8;
-    border-right: 4px solid #823cb8;
+    width: 16px;
+    height: 16px;
+    border-bottom: 2px solid #823cb8;
+    border-right: 2px solid #823cb8;
     transform: rotate(45deg);
     margin: -10px;
     animation: animate 2s infinite;

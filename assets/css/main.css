@@ -1,7 +1,7 @@
 .containerrr {
             cursor: pointer;
             width: 400px; /* Largura do contêiner */
-            height: 190px; /* Altura do contêiner */
+            height: 250px; /* Altura do contêiner */
             background-image: url('/assets/images/backgroundskyroxo.jpg'); /* A imagem que você quer que apareça */
             background-size: cover;
             background-position: center;
@@ -15,10 +15,11 @@
             mask-position: center;
             transition: 0.7s ease-in-out;
             margin-bottom: 50px;
+            filter: brightness(1.3);
         }
 
-        .containerrr:hover {
-            filter: brightness(1.3) saturate(120%);
+        .nav-mob{
+            display: none;
         }
 
 

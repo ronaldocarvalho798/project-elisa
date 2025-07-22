@@ -7,6 +7,10 @@
         display: none;
     }
 
+    .nav-mob{
+            display: block;
+    }
+
     .header-desktop{
         justify-content: center;
         padding: 1rem 6rem;
@@ -27,11 +31,15 @@
     }
 
     .containerrr{
-        max-width: 190px;
-        height: 150px;
+        max-width: 280px;
+        height: 180px;
         margin-bottom: 20px;
     }
     
+    .arrow{
+        margin-top: 200px;
+    }
+
     .btm-explore{
        margin-top: 10px;
     }
@@ -65,6 +73,7 @@
         background-image: url(/assets/images/footernew.png);
         background-position: center;
         background-size: cover;
+        margin-bottom: 5rem;
     }
 
     .container-footer{
@@ -84,6 +93,12 @@
 
 
 @media (max-width:425px){
+
+    .containerrr{
+        max-width: 190px;
+        height: 150px;
+        margin-bottom: 20px;
+    }
 
     .main-sob {
         padding: 2rem 1.5rem;
