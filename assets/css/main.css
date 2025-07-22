@@ -1,12 +1,12 @@
 .containerrr {
             cursor: pointer;
             width: 400px; /* Largura do contêiner */
-            height: 150px; /* Altura do contêiner */
+            height: 190px; /* Altura do contêiner */
             background-image: url('/assets/images/backgroundskyroxo.jpg'); /* A imagem que você quer que apareça */
             background-size: cover;
             background-position: center;
-            -webkit-mask-image: url('/assets/images/logopreto4.png'); /* Sua imagem preta como máscara */
-            mask-image: url('/assets/images/logopreto4.png'); /* Para compatibilidade com outros navegadores */
+            -webkit-mask-image: url('/assets/images/sky.png'); /* Sua imagem preta como máscara */
+            mask-image: url('/assets/images/sky.png'); /* Para compatibilidade com outros navegadores */
             -webkit-mask-size: cover;
             mask-size: cover;
             -webkit-mask-repeat: no-repeat;
