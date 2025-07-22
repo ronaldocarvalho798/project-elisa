@@ -88,6 +88,10 @@
         padding: 2rem 1.5rem;
     }
 
+    .arrow {
+        margin-top: 280px;
+    }
+
     .container-icons {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
