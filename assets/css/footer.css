@@ -5,7 +5,7 @@ footer{
     background-size: cover;
 }
 
-footer h3{
+.name-footer{
     font-family: 'Lora', serif; 
     text-align: center; 
     color: black;

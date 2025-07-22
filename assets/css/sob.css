@@ -179,3 +179,11 @@ span{
 .marginleft-descriptionform{
     margin-left: 20px;
 }
+
+.container-coresoft{
+    display: flex;
+}
+
+.coresoft{
+    width: 50%;
+}
