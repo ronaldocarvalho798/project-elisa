@@ -31,36 +31,60 @@ main{
 }
 
 main h1{
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.825rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
     font-weight: 400;
 }
 
-.btm-explore{
-    font-family: "Montserrat", sans-serif;
+.btm-explore {
+    font-family: "Poppins", sans-serif;
     position: relative;
+    color: white;
+    overflow: hidden;
     margin-top: 20px;
-    color: #511F76;
-    font-weight: 600;
+    font-weight: 500;
+    padding: .8rem 2.5rem;
+    border-radius: 30px;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.592);
+    transition: 0.3s ease-in-out;
 }
 
-.btm-explore::after {
-    content: ''; 
-    display: block; 
-    width: 100%; 
-    height: 1px; 
-    background-color: #511F76; 
-    position: absolute;
-    bottom: -1px;
+.btm-explore:hover{
+    transform: scale(1.1);
 }
+
+.btm-explore::before {
+    content: '';
+    position: absolute;
+    top: -120%;
+    left: -100%;
+    width: 300%;
+    height: 350%;
+    background-image: url(/assets/images/backgroundskyroxo.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    filter: brightness(1.5);
+    z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo do botão */
+    animation: rotateBackground 10s linear infinite; /* Exemplo de animação */
+}
+
+@keyframes rotateBackground {
+    0% {
+        transform: rotate(0deg) translate(0, 0);
+    }
+    50% {
+        transform: rotate(180deg) translate(10px, 5px);
+    }
+    100% {
+        transform: rotate(360deg) translate(0, 0);
+    }
+}
+
 
 .chibi{
     animation: fade 1.3s ease-in-out forwards;
     animation-delay: 700ms;
-}
-
-.test{
-    background-image: url(/assets/);
 }
 
 .nav-container{

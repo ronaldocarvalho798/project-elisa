@@ -41,4 +41,18 @@
 
         footer .icons:hover{
             transform: translateY(-10px);
-        } 
+        }
+        
+        .right-text{
+            position: absolute;
+            top: 90%;
+            left: 90%;
+            transform: translate(-50%, -50%);
+        }
+
+        .frase{
+            font-family: "Montserrat", sans-serif;
+            text-align: right;
+            font-size: 26px;
+            font-weight: 500;
+        }
