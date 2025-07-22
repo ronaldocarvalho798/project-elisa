@@ -13,7 +13,7 @@
     }
 
     main{
-        padding: 7rem 1.5rem;
+        padding: 7rem 1.5rem 12rem 1.5rem;
     }
 
     .main-sob{
@@ -27,8 +27,9 @@
     }
 
     .containerrr{
-        max-width: 300px;
-        margin-bottom: 55px;
+        max-width: 190px;
+        height: 150px;
+        margin-bottom: 20px;
     }
     
     .btm-explore{
@@ -89,7 +90,7 @@
     }
 
     .arrow {
-        margin-top: 220px;
+        margin-top: 150px;
     }
 
     .container-icons {
