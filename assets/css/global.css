@@ -49,7 +49,7 @@ html{
     padding: 1rem 15rem; 
     z-index: 100; 
     width: 100%;
-    backdrop-filter: blur(11px);
+    backdrop-filter: blur(5px);
 }
 
 .header-desktop::after{
