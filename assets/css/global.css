@@ -46,10 +46,11 @@ html{
     justify-content: space-between; 
     align-items: center; 
     position: fixed;
-    padding: 1rem 15rem; 
+    padding: .8rem 15rem; 
     z-index: 100; 
     width: 100%;
-    backdrop-filter: blur(5px);
+    background-color: #d4aff662;
+    backdrop-filter: blur(11px);
 }
 
 .header-desktop::after{

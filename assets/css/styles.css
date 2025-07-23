@@ -172,7 +172,7 @@ main h1{
 }
 
 .logo{
-    width: 50px;
+    width: 45px;
     animation: logoanim .5s ease-in-out forwards;
     animation-delay: 1900ms;
 }

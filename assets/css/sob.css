@@ -94,7 +94,7 @@ span{
 /* Imagens para cada seção */
 .parallax-one {
     position: relative;
-   background-image: url(/assets/images/estrelas.jpg);
+   background-image: url(/assets/images/backgroundskyroxo.jpg);
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
@@ -126,9 +126,11 @@ span{
 }
 
 .description-form{
-    font-weight: 200;
     font-family: "Montserrat", sans-serif;
-    margin-left: 1.25rem
+    font-weight: 300;
+    font-size: .7rem;
+    margin-left: 1.25rem;
+    margin-top: .25rem;
 }
 
 .margin-bot{
@@ -186,4 +188,9 @@ span{
 
 .coresoft{
     width: 50%;
+}
+
+.title-sob .bi{
+    font-size: 1.3rem; 
+    margin-right: .8rem;
 }
