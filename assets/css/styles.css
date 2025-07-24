@@ -26,20 +26,6 @@ main{
     overflow: hidden; /* Opcional, ajuda a conter */
 }
 
-main::before {
-    content: ''; /* Necessário para que o pseudo-elemento apareça */
-    position: absolute; /* Posiciona o pseudo-elemento sobre o 'main' */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(/assets/images/mainestrelas1.jpg);
-    background-position: center;
-    background-size: cover;
-    opacity: .6; /* **Ajuste este valor (de 0.0 a 1.0) para a opacidade desejada** */
-    z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo */
-}
-
 .fade-content {
     display: flex;
     flex-direction: column;
