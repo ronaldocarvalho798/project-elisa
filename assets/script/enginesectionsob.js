@@ -19,3 +19,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+const headerDesktop = document.getElementById('headerdesktop')
+
+function scrollHeader() {
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 10) {
+            headerDesktop.classList.add('scrolled-header');
+        } else {
+            headerDesktop.classList.remove('scrolled-header');
+        }
+    });
+}
+
+scrollHeader()
+
+

@@ -49,8 +49,12 @@ html{
     padding: .8rem 15rem; 
     z-index: 100; 
     width: 100%;
-    background-color: #d4aff662;
     backdrop-filter: blur(11px);
+    transition: 1s ease-in-out;
+}
+
+.scrolled-header{
+  background-color: #d4aff662;
 }
 
 .header-desktop::after{

@@ -6,9 +6,8 @@
 }
 
 .health-bar-container {
-            width: 80px; /* Largura total da barra para todos os exemplos */
-            height: 10px;
-            background-color: #ddd; /* Cor de fundo da barra vazia */
+            width: 60px; /* Largura total da barra para todos os exemplos */
+            height: 7px;
             border-radius: 5px;
             overflow: hidden;
             border: 1px solid #bbb; /* Uma pequena borda para destacar */

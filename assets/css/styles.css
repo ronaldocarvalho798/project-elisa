@@ -324,12 +324,11 @@ li .bi{
 
 
 .container-icons img{
-    width: 80px;
-    filter: sepia(100%) hue-rotate(270deg);
+    width: 64px;
 }
 
 #fig{
-        width: 52px;
+        width: 42px;
 }
 
 
