@@ -164,7 +164,8 @@ span{
 
 .list-formation{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, fit-content(50%));
+    column-gap: 200px;
     row-gap: 14px;
 }
 
@@ -183,11 +184,9 @@ span{
 }
 
 .container-coresoft{
-    display: flex;
-}
-
-.coresoft{
-    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
 }
 
 .title-sob .bi{
