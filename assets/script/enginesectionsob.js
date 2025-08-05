@@ -20,18 +20,28 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-const headerDesktop = document.getElementById('headerdesktop')
+const headerDesktop = document.getElementById('headerdesktop');
+const linksNav = document.querySelectorAll('.links-nav');
 
 function scrollHeader() {
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 10) {
+        if (window.scrollY > 20) {
             headerDesktop.classList.add('scrolled-header');
         } else {
             headerDesktop.classList.remove('scrolled-header');
         }
+        if (window.scrollY > 600) {
+            linksNav.forEach(link => {
+                link.classList.add('redd');
+            });
+        } else {
+            linksNav.forEach(link => {
+                link.classList.remove('redd');
+            });
+        }
     });
 }
 
-scrollHeader()
+scrollHeader();
 
 
