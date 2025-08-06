@@ -128,13 +128,12 @@ span{
 .description-form{
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
-    font-size: 1.1rem;
+    font-size: .825rem;
     margin-left: 1.25rem;
-    margin-top: .25rem;
 }
 
 .margin-bot{
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
 }
 
 .main-software{
@@ -146,12 +145,13 @@ span{
 }
 
 .main-sob{
-    position: relative; 
+    position: relative;
+    left: 50px; 
     z-index: 2;  
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); 
     border-radius: 15px; 
-    max-width: 850px;
-    padding: 3rem;
+    max-width: 700px;
+    padding: 2rem;
     backdrop-filter: blur(5px);
 }
 
@@ -165,8 +165,8 @@ span{
 .list-formation{
     display: grid;
     grid-template-columns: repeat(2, fit-content(50%));
-    column-gap: 200px;
-    row-gap: 14px;
+    column-gap: 175px;
+    row-gap: 9px;
 }
 
 .core{
@@ -195,5 +195,5 @@ span{
 }
 
 .soft-margin{
-    margin-left: 3rem;
+    margin-left: 2.7rem;
 }

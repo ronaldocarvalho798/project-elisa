@@ -23,6 +23,7 @@
     .main-sob{
         width: 100%;
         padding: 2rem;
+        left: 0;
     }
 
     main h1{
@@ -47,6 +48,16 @@
     .main-software{
         flex-direction: column;
         gap: 0;
+    }
+
+    .container-formgirl{
+        flex-direction: column-reverse;
+    }
+
+    .girl{
+            max-width: 50%;
+            left: 0;
+            margin: auto auto;
     }
 
     .container-icons {
