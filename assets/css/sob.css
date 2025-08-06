@@ -150,8 +150,8 @@ span{
     z-index: 2;  
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); 
     border-radius: 15px; 
-    max-width: 700px;
-    padding: 2rem;
+    max-width: 590px;
+    padding: 1.5rem;
     backdrop-filter: blur(5px);
 }
 
@@ -164,8 +164,7 @@ span{
 
 .list-formation{
     display: grid;
-    grid-template-columns: repeat(2, fit-content(50%));
-    column-gap: 175px;
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 9px;
 }
 
@@ -179,6 +178,12 @@ span{
     grid-template-columns: repeat(1, 1fr);
 }
 
+#softcont{
+    position: relative;
+    left: -15px;
+}
+
+
 .marginleft-descriptionform{
     margin-left: 20px;
 }
@@ -190,7 +195,7 @@ span{
 }
 
 .title-sob .bi{
-    font-size: 1.8rem; 
+    font-size: 1.6rem; 
     margin-right: .8rem;
 }
 
